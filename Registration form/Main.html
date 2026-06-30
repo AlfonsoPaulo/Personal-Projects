@@ -1,0 +1,189 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="border">
+      <div class="form-container">
+        <header>
+          <h1>Employee Registration Form</h1>
+          <p class="subhead">Please fill out all sections accurately</p>
+        </header>
+
+        <form id="employeeForm" action="#" method="post" enctype="multipart/form-data">
+          <!-- FULL NAME -->
+          <div class="form-section">
+            <label class="section-label">Full Name</label>
+            <div class="name-row">
+              <div class="input-group">
+                <input type="text" name="firstName" placeholder="First Name" autocomplete="given-name">
+              </div>
+              <div class="input-group">
+                <input type="text" name="lastName" placeholder="Last Name" autocomplete="family-name">
+              </div>
+            </div>
+          </div>
+
+          <!-- DATE OF BIRTH -->
+          <div class="form-section">
+            <label for="dob" class="section-label">Date of Birth</label>
+            <div class="input-group">
+              <input type="text" id="dob" name="dob" placeholder="MM-DD-YYYY" autocomplete="bday">
+              <small>Format: MM-DD-YYYY</small>
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="form-section">
+            <label for="email" class="section-label">Email</label>
+            <div class="input-group">
+              <input type="email" id="email" name="email" placeholder="example@example.com" autocomplete="email">
+            </div>
+          </div>
+
+          <!-- PHONE NUMBER -->
+          <div class="form-section">
+            <label for="phone" class="section-label">Phone Number</label>
+            <div class="input-group">
+              <input type="tel" id="phone" name="phone" placeholder="(+63) 000-000-0000" autocomplete="tel">
+              <small class="helper-text">Please enter a valid phone number.</small>
+            </div>
+          </div>
+
+          <!-- ADDRESS (City + State side by side, Postal below) -->
+          <div class="form-section">
+            <label class="section-label">Address</label>
+            <div class="input-group">
+              <input type="text" name="street" placeholder="Street Address" autocomplete="address-line1">
+            </div>
+            <div class="input-group">
+              <input type="text" name="street2" placeholder="Street Address Line 2" autocomplete="address-line2">
+            </div>
+            <div class="address-row">
+              <div class="input-group half-width">
+                <input type="text" name="city" placeholder="City" autocomplete="address-level2">
+              </div>
+              <div class="input-group half-width">
+                <input type="text" name="state" placeholder="State / Province" autocomplete="address-level1">
+              </div>
+            </div>
+            <div class="input-group">
+              <input type="text" name="zip" placeholder="Postal / Zip Code" autocomplete="postal-code">
+            </div>
+          </div>
+
+          <!-- APPLYING POSITION -->
+          <div class="form-section">
+            <label for="position" class="section-label">Applying Position</label>
+            <div class="input-group">
+              <input type="text" id="position" name="position" placeholder="e.g., Frontend Developer">
+            </div>
+          </div>
+
+          <!-- TYPE OF WORK -->
+          <fieldset class="radio-group">
+            <legend class="section-label">Type Of Work</legend>
+            <div class="options-row">
+              <label><input type="radio" name="workType" value="Permanent"> Permanent</label>
+              <label><input type="radio" name="workType" value="Temporary"> Temporary</label>
+              <label><input type="radio" name="workType" value="Both"> Both</label>
+              <label><input type="radio" name="workType" value="Other"> Other</label>
+            </div>
+          </fieldset>
+
+          <!-- RESUME UPLOAD (clickable drop area) -->
+          <div class="form-section">
+            <label class="section-label">Please Upload Resume</label>
+            <div class="file-drop-area">
+              <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx,.txt,.png,.jpg">
+              <div class="drop-instructions">
+                <span class="browse-text">Browse Files</span>
+                <span class="drag-text">Click to select a file</span>
+              </div>
+            </div>
+            <small class="file-hint">Accepted formats: PDF, DOC, DOCX, TXT, PNG, JPG</small>
+          </div>
+
+          <!-- COVER LETTER -->
+          <div class="form-section">
+            <label for="coverLetter" class="section-label">Cover Letter or Additional Information</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4" placeholder="Type here..."></textarea>
+          </div>
+
+          <!-- VETERAN STATUS (two‑column) -->
+          <fieldset class="radio-group">
+            <legend class="section-label">Veteran Status <span>(Please select the option that describes your status the best)</span></legend>
+            <div class="check-grid">
+              <label><input type="radio" name="veteran" value="veteran"> I am a veteran</label>
+              <label><input type="radio" name="veteran" value="special_disabled"> I am a special disabled veteran</label>
+              <label><input type="radio" name="veteran" value="recently_separated"> I am a recently separated veteran</label>
+              <label><input type="radio" name="veteran" value="not_veteran"> I am not a veteran</label>
+              <label><input type="radio" name="veteran" value="other_protected"> I am an other protected veteran</label>
+              <label><input type="radio" name="veteran" value="prefer_not_vet"> Prefer Not The Answer</label>
+            </div>
+          </fieldset>
+
+          <!-- GENDER -->
+          <fieldset class="radio-group">
+            <legend class="section-label">Gender</legend>
+            <div class="check-grid">
+              <label><input type="radio" name="gender" value="Female"> Female</label>
+              <label><input type="radio" name="gender" value="Male"> Male</label>
+              <label><input type="radio" name="gender" value="Transgender Female"> Transgender Female</label>
+              <label><input type="radio" name="gender" value="Transgender Male"> Transgender Male</label>
+              <label><input type="radio" name="gender" value="Prefer Not The Answer"> Not Listed</label>
+              <label><input type="radio" name="gender" value="Not Listed"> Prefer Not The Answer</label>
+            </div>
+          </fieldset>
+
+          <!-- DISABILITIES -->
+          <fieldset class="radio-group">
+            <legend class="section-label">Disabilities</legend>
+            <div class="check-grid vertical-list">
+              <label><input type="radio" name="disability" value="no_disability"> I have no disability</label>
+              <label><input type="radio" name="disability" value="two_or_more"> I have two or more impairments and/or disabling medical conditions.</label>
+              <label><input type="radio" name="disability" value="specific_learning"> I have a Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D)</label>
+              <label><input type="radio" name="disability" value="social_communication"> I have a social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder</label>
+              <label><input type="radio" name="disability" value="long_standing_illness"> I have a long standing illness or health condition such as cancer, HIV, diabetes, chronic heart disease, or epilepsy</label>
+              <label><input type="radio" name="disability" value="physical_impairment"> I have a physical impairment or mobility issues (e.g. difficulty using arms/using a wheelchair or crutches)</label>
+              <label><input type="radio" name="disability" value="hearing_impairment"> I am deaf or have a serious hearing impairment</label>
+              <label><input type="radio" name="disability" value="visual_impairment"> I am blind or have a serious visual impairment uncorrected by glasses</label>
+              <label><input type="radio" name="disability" value="prefer_not_disability"> Prefer not to answer</label>
+              <label><input type="radio" name="disability" value="not_listed_disability"> I have a disability, impairment or medical condition not listed here</label>
+            </div>
+          </fieldset>
+
+          <!-- RACE -->
+          <fieldset class="radio-group">
+            <legend class="section-label">Race</legend>
+            <div class="check-grid">
+              <label><input type="radio" name="race" value="American Native or Alaska Native"> Native Hawaiian or Other Pacific Islander</label>
+              <label><input type="radio" name="race" value="Asian"> Asian</label>
+              <label><input type="radio" name="race" value="Black or African American"> American Native or Alaska Native </label>
+              <label><input type="radio" name="race" value="Native Hawaiian or Other Pacific Islander"> White </label>
+              <label><input type="radio" name="race" value="White"> Black or African American</label>
+              <label><input type="radio" name="race" value="Two or more races"> Other</label>
+              <label><input type="radio" name="race" value="Decline to specify"> Two or more races</label>
+              <label><input type="radio" name="race" value="Other">  Decline to specify</label>
+            </div>
+          </fieldset>
+
+          <!-- ADDITIONAL NOTES -->
+          <div class="form-section">
+            <label for="additionalNotes" class="section-label">Additional Notes</label>
+            <textarea id="additionalNotes" name="additionalNotes" rows="4" placeholder="Type here..."></textarea>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <div class="submit-area">
+            <button type="submit" class="submit-btn">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>

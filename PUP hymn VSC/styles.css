@@ -1,0 +1,18 @@
+/* Style for each word span */
+.word {
+    transition: all 0.2s ease;
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+    display: inline-block;
+}
+.word.active {
+    color: #800000;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 0 0 3px #DAA520;
+}
+.line {
+    margin-bottom: 5px;
+}
+
