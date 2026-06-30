@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>Alfonso's Coffeehouse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header with clickable logo -->
+    <header class="site-header">
+      <a href="#home" class="logo">
+        <span class="logo-icon">☕</span>
+        <span>Alfonso's Coffeehouse</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <main class="pages-container">
+      <!-- HOME PAGE – centered, no image -->
+      <article id="home" class="page">
+        <div class="page-content home-layout">
+          <div class="hero-text centered">
+            <h1 class="welcome-title">Welcome to <br><span class="coffee-brand">Alfonso's Coffeehouse</span></h1>
+            <p class="short-description">
+              A new coffee experience you'll never forget.
+            </p>
+            <a href="#menu" class="cta-menu-btn">☕ Explore Our Menu</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MENU PAGE – order: Coffee, Non‑Coffee, Houseblend, Pastries -->
+      <article id="menu" class="page">
+        <div class="page-content menu-layout">
+          <div class="menu-container">
+            <h2 class="menu-page-title">Menu</h2>
+            <div class="menu-grid">
+              <!-- Coffee -->
+              <div class="menu-section">
+                <div class="menu-section-header">
+                  <span>☕ Coffee</span>
+                  <span class="size-label">(16oz)</span>
+                </div>
+                <ul class="menu-items">
+                  <li><span>Espresso</span><span>₱100</span></li>
+                  <li><span>Americano</span><span>₱100</span></li>
+                  <li><span>Latte</span><span>₱100</span></li>
+                  <li><span>Cappuccino</span><span>₱100</span></li>
+                  <li><span>Mocha</span><span>₱100</span></li>
+                </ul>
+              </div>
+
+              <!-- Non‑Coffee -->
+              <div class="menu-section">
+                <div class="menu-section-header">
+                  <span>🍵 Non‑Coffee</span>
+                  <span class="size-label">(16oz)</span>
+                </div>
+                <ul class="menu-items">
+                  <li><span>Chai Latte</span><span>₱100</span></li>
+                  <li><span>Matcha Latte</span><span>₱100</span></li>
+                  <li><span>Hot Chocolate</span><span>₱100</span></li>
+                  <li><span>Herbal Tea</span><span>₱100</span></li>
+                  <li><span>Steamer (Vanilla)</span><span>₱100</span></li>
+                </ul>
+              </div>
+
+              <!-- Houseblend -->
+              <div class="menu-section">
+                <div class="menu-section-header">
+                  <span>🏠 Houseblend</span>
+                  <span class="size-label">(16oz)</span>
+                </div>
+                <ul class="menu-items">
+                  <li><span>Alfonso's Signature</span><span>₱100</span></li>
+                  <li><span>Morning Roast</span><span>₱100</span></li>
+                  <li><span>Dark French</span><span>₱100</span></li>
+                  <li><span>Decaf House</span><span>₱100</span></li>
+                </ul>
+              </div>
+
+              <!-- Pastries (no size) -->
+              <div class="menu-section">
+                <div class="menu-section-header">
+                  <span>🥐 Pastries</span>
+                  <span class="size-label">(Per Slice)</span>
+                </div>
+                <ul class="menu-items">
+                  <li><span>Chocolate cake</span><span>₱100</span></li>
+                  <li><span>Almond Croissant</span><span>₱100</span></li>
+                  <li><span>Chocolate Muffin</span><span>₱100</span></li>
+                  <li><span>Banana bread</span><span>₱100</span></li>
+                  <li><span>Cinnamon Roll</span><span>₱100</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-footer-note">✨ Specials items are only available at physical store! ✨</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CONTACT PAGE -->
+      <article id="contact" class="page">
+        <div class="page-content contact-layout">
+          <div class="contact-container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <div class="contact-info-single">
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div><strong>Visit us</strong><br>Muntinlupa City, Poblacion</div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div><strong>Call us</strong><br>+63 0912 346 4265</div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <div><strong>Email</strong><br>nobody@alfonsoscoffee.com</div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🕒</span>
+                <div><strong>Hours</strong><br>Mon – Sun: 2:00pm – 12:00am</div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🗺️</span>
+                <div><strong>Location</strong><br>Inside Katarungan 1 – near 7/11</div>
+              </div>
+            </div>
+            <div class="contact-note">We’d love to hear from you — stop by for the perfect brew.</div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer – only copyright -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Alfonso's Coffeehouse. Crafted with warmth & integrity.</p>
+    </footer>
+  </div>
+</body>
+</html>
